@@ -11,10 +11,10 @@ const image = require('./controllers/image');
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
 
-app.use((req, res, next) => {
+/* app.use((req, res, next) => {
   res.header({"Access-Control-Allow-Origin": "*"});
   next();
-}) 
+})  */
 
 const db = knex({
   // connect to your own database here
